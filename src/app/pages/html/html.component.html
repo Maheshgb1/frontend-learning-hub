@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ================= META TAGS ================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML Interview Preparation for Angular Developers">
+  <!-- <meta http-equiv="refresh" content="5"> -->
+   <!-- <meta http-equiv="refresh" content="5, url=google.com"> -->
+    <meta http-equiv="content-security-policy" content="default-src 'self'">
+
+  <title>HTML Master Document</title>
+</head>
+
+<body>
+<button (click)="onGoBackClick()">Go Back</button>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>HTML Interview Preparation</h1>
+    <nav>
+      <a href="#semantic">Semantic</a> |
+      <a href="#forms">Forms</a> |
+      <a href="#tables">Tables</a> |
+      <a href="#media">Media</a> |
+      <a href="#accessibility">Accessibility</a>
+    </nav>
+  </header>
+
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+
+<h2>Input tag</h2>
+    <form>
+  <input type="text" placeholder="Name"><br><br>
+  <input type="email" placeholder="Email"><br><br>
+  <input type="password" placeholder="Password"><br><br>
+  <input type="number" placeholder="Age"><br><br>
+  <input type="date"><br><br>
+  <input type="file"><br><br>
+  <input type="radio" name="gender" checked> Male  
+<input type="radio" name="gender"> Female
+<input type="checkbox" checked> Java  
+<input type="checkbox"> Python  
+<input type="checkbox"> JavaScript
+
+
+  <input type="submit" value="Submit">
+</form>
+
+    <!-- ================= SEMANTIC HTML ================= -->
+    <section id="semantic">
+      <h2>Semantic HTML</h2>
+
+      <article>
+        <h3>Article Section</h3>
+        <p>
+          Semantic HTML gives meaning to content. 
+          Examples include header, footer, section, article, nav, aside.
+        </p>
+      </article>
+
+      <aside>
+        <p>This is an aside section.</p>
+      </aside>
+    </section>
+
+    <!-- ================= LISTS ================= -->
+    <section>
+      <h2>Lists</h2>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Learn Basics</li>
+        <li>Practice</li>
+        <li>Interview</li>
+      </ol>
+
+      <h3>Description List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Structure of web pages</dd>
+      </dl>
+    </section>
+
+    <!-- ================= FORMS ================= -->
+    <section id="forms">
+      <h2>Forms</h2>
+
+      <form>
+        <label for="name">Name</label>
+        <input id="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" />
+
+        <label>Password</label>
+        <input type="password" />
+
+        <label>Age</label>
+        <input type="number" min="18" max="60" />
+
+        <label>Gender</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        <label>
+          <input type="checkbox"> Accept Terms
+        </label>
+
+        <label>Country</label>
+        <select>
+          <option>India</option>
+          <option>USA</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <!-- ================= TABLES ================= -->
+    <section id="tables">
+      <h2>Tables</h2>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Technology</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mahesh</td>
+            <td>Angular</td>
+          </tr>
+          <tr>
+            <td colspan="2">Footer Row</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ================= MEDIA ================= -->
+    <section id="media">
+      <h2>Media Elements</h2>
+
+      <img 
+        src="https://via.placeholder.com/150"
+        alt="Sample image"
+        loading="lazy"
+      />
+
+      <video controls width="250">
+        <source src="sample.mp4" type="video/mp4">
+      </video>
+
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <!-- ================= LINKS ================= -->
+    <section>
+      <h2>Links</h2>
+      <a href="https://angular.io" target="_blank" rel="noopener noreferrer">
+        Angular Official Site
+      </a>
+    </section>
+
+    <!-- ================= ACCESSIBILITY ================= -->
+    <section id="accessibility">
+      <h2>Accessibility</h2>
+
+      <button aria-label="Save Data">Save</button>
+
+      <img src="icon.png" alt="Save icon">
+
+      <div role="alert">
+        Error occurred
+      </div>
+    </section>
+
+    <!-- ================= DATA ATTRIBUTES ================= -->
+    <section>
+      <h2>Custom Data Attributes</h2>
+      <div data-user-id="101" data-role="admin">
+        User Info
+      </div>
+    </section>
+
+    <!-- ================= IFRAME ================= -->
+    <section>
+      <h2>Iframe</h2>
+      <iframe 
+        src="https://example.com"
+        title="Example iframe"
+        sandbox>
+      </iframe>
+    </section>
+    <section class="css-container">
+
+  <h1>CSS Interview Preparation</h1>
+
+  <!-- ================= SELECTORS ================= -->
+  <section>
+    <h2>Selectors</h2>
+    <p class="text highlight">Class Selector</p>
+    <p id="unique">ID Selector</p>
+    <p data-type="info">Attribute Selector</p>
+  </section>
+
+  <!-- ================= BOX MODEL ================= -->
+  <section class="box-model">
+    <h2>Box Model</h2>
+    <div class="box">Box Model Example</div>
+  </section>
+
+  <!-- ================= DISPLAY ================= -->
+  <section>
+    <h2>Display</h2>
+    <span class="inline">Inline</span>
+    <span class="inline-block">Inline-Block</span>
+    <div class="block">Block</div>
+  </section>
+
+  <!-- ================= POSITION ================= -->
+  <section class="position-parent">
+    <h2>Position</h2>
+    <div class="relative">
+      Relative
+      <div class="absolute">Absolute</div>
+    </div>
+    <div class="fixed">Fixed</div>
+    <div class="sticky">Sticky</div>
+  </section>
+
+  <!-- ================= FLEXBOX ================= -->
+  <section>
+    <h2>Flexbox</h2>
+    <div class="flex-container">
+      <div>One</div>
+      <div>Two</div>
+      <div>Three</div>
+    </div>
+  </section>
+
+  <!-- ================= GRID ================= -->
+  <section>
+    <h2>Grid</h2>
+    <div class="grid-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </section>
+
+  <!-- ================= RESPONSIVE ================= -->
+  <section>
+    <h2>Responsive Design</h2>
+    <div class="responsive-box">Resize Screen</div>
+  </section>
+
+  <!-- ================= PSEUDO ================= -->
+  <section>
+    <h2>Pseudo Classes & Elements</h2>
+    <button class="hover-btn">Hover Me</button>
+    <p class="pseudo-text">Pseudo Element</p>
+  </section>
+
+  <!-- ================= ANIMATION ================= -->
+  <section>
+    <h2>Transitions & Animations</h2>
+    <div class="animate-box"></div>
+  </section>
+
+  <!-- ================= VARIABLES ================= -->
+  <section>
+    <h2>CSS Variables</h2>
+    <p class="var-text">Using CSS Variables</p>
+  </section>
+
+</section>
+
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>&copy; 2026 HTML Interview Prep</p>
+  </footer>
+</body>
+</html>

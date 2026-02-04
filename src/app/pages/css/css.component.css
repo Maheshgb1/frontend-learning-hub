@@ -1,0 +1,161 @@
+/* ================= VARIABLES ================= */
+:root {
+  --primary: #007bff;
+  --secondary: #0056b3;
+  --padding: 20px;
+}
+
+/* ================= GLOBAL ================= */
+.css-container {
+  font-family: Arial, sans-serif;
+  padding: var(--padding);
+}
+
+/* ================= SELECTORS ================= */
+.text {
+  color: green;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+#unique {
+  color: red;
+}
+
+[data-type="info"] {
+  color: purple;
+}
+
+/* ================= BOX MODEL ================= */
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 3px solid black;
+  margin: 10px;
+}
+
+/* ================= DISPLAY ================= */
+.inline {
+  display: inline;
+  background: lightblue;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 120px;
+  background: lightgreen;
+}
+
+.block {
+  display: block;
+  background: lightcoral;
+}
+
+/* ================= POSITION ================= */
+.position-parent {
+  position: relative;
+}
+
+.relative {
+  position: relative;
+  padding: 30px;
+  background: #eee;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: yellow;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: black;
+  color: white;
+  padding: 5px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background: orange;
+}
+
+/* ================= FLEXBOX ================= */
+.flex-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-container div {
+  background: #ddd;
+  padding: 10px;
+}
+
+/* ================= GRID ================= */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-container div {
+  background: #ccc;
+  padding: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
+.responsive-box {
+  width: 100%;
+  height: 100px;
+  background: var(--primary);
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    background: var(--secondary);
+  }
+}
+
+/* ================= PSEUDO ================= */
+.hover-btn:hover {
+  background: black;
+  color: white;
+}
+
+.pseudo-text::before {
+  content: "👉 ";
+}
+
+/* ================= TRANSITION ================= */
+.animate-box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: transform 0.5s;
+}
+
+.animate-box:hover {
+  transform: rotate(45deg);
+}
+
+/* ================= ANIMATION ================= */
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateX(100px); }
+}
+
+.animate-box {
+  animation: move 2s infinite alternate;
+}
+
+/* ================= VARIABLES ================= */
+.var-text {
+  color: var(--primary);
+}
