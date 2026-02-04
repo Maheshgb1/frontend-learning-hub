@@ -8,10 +8,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './html.component.css'
 })
 export class HtmlComponent {
-topics = [
-'Introduction to HTML'
-];
-
 onGoBackClick() {
   window.location.href = '/';
 }

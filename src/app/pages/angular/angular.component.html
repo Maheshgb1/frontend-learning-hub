@@ -1,2 +1,131 @@
-<p>angular works!</p>
+<h4>Component</h4>
+<p>Component controls part of UI and contains HTML, CSS and ts files.</p>
+
+<h4>Data Binding</h4>
+<p>Angular supports 4 main types of data binding:</p>
+<ul>
+  <li>
+  Interpolation (One-way Data Binding): Used to display value from component to View <br>
+  Example: {{value}}
+</li>
+<br>
+  <li>
+    Property Binding (One-way Data Binding): Used to bind HTML properties from component to View  <br>
+    Example: <img [src]="imageUrl" alt="oops">
+</li>
+<br>
+
+  <li>
+    Event Binding (One-way Data Binding):Used to send events from HTML to TypeScript <br>
+    Example: <button (click)="isButtonClicked()">Event Binding Example</button>
+</li>
+<br>
+
+  <li>
+    Two-Way Binding: Keeps input value and component variable synced both ways. <br>
+    Example:<input [(ngModel)]="name">
+            <p>You typed: {{ name }}</p>
+</li>
+</ul>
+
+<h4>Angular Lifecycle Hooks</h4>
+<p>Angular lifecycle hooks are methods that let us run code at specific moments in a component’s life — from creation to destruction. </p>
+    <table border="1">
+        <thead>
+          <tr>
+            <th>Hook</th>
+            <th>Called When</th>
+            <th>Runs How Often</th>
+            <th>Used For</th>
+            <th>Example Use Case</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>constructor</td>
+            <td>Component class is created</td>
+            <td>Once</td>
+            <td>Dependency Injection</td>
+            <td>Inject services</td>
+          </tr>
+          <tr>
+            <td>ngOnChanges</td>
+            <td>Input() value changes</td>
+            <td>Many times</td>
+            <td>React to input changes</td>
+            <td>Update UI when parent data changes</td>
+          </tr>
+          <tr>
+            <td>ngOnInit</td>
+            <td>After first ngOnChanges</td>
+            <td>Once</td>
+            <td>Initialization logic</td>
+            <td>API calls, default data</td>
+          </tr>
+          <tr>
+            <td>ngDoCheck</td>
+            <td>Every change detection</td>
+            <td>Many times</td>
+            <td>Custom change detection</td>
+            <td>Deep object comparison</td>
+          </tr>
+          <tr>
+            <td>ngAfterContentInit</td>
+            <td>ng-content initialized</td>
+            <td>Once</td>
+            <td>Projected content setup</td>
+            <td>Access projected data</td>
+          </tr>
+          <tr>
+            <td>ngAfterContentChecked</td>
+            <td>Projected content checked</td>
+            <td>Many times</td>
+            <td>Validate projected content</td>
+            <td>Log content updates</td>
+          </tr>
+          <tr>
+            <td>ngAfterViewInit</td>
+            <td>View & child views ready</td>
+            <td>Once</td>
+            <td>DOM access</td>
+            <td>Focus input, load charts</td>
+          </tr>
+          <tr>
+            <td>ngAfterViewChecked</td>
+            <td>View checked</td>
+            <td>Many times</td>
+            <td>Post-view checks</td>
+            <td>Debug UI rendering</td>
+          </tr>
+          <tr>
+            <td>ngOnDestroy</td>
+            <td>Before component removal</td>
+            <td>Once</td>
+            <td>Cleanup</td>
+            <td>Unsubscribe, clear timers</td>
+          </tr>
+          </tbody>
+          </table><br><br>
+
+<h4>Directives</h4>
+<p>Directives are instructions that tell Angular how to change the DOM (structure, behavior, or appearance). <br>
+    There are 4 types of directives:</p>
+    <ol>
+        <li>Component Directives: Every component is a directive with a template.</li>
+        <li>Structural Directives: They add / remove elements from the DOM. Identified by '*' --- *ngIf, *ngFor, *ngSwitch, *ngTemplateOutlet</li>
+        <li>Attribute Directives: They modify existing elements. Identified by '[attribute]' (ngClass – Add/Remove CSS Classes, ngStyle – Add/Remove CSS Styles, ngModel – Two-Way Binding (Forms))</li>
+        <li>Custom Directives: <input type="text" appOnlyNumbers  /> <p appHighlight>Hover me</p>
+</li>
+    </ol>
+
+    <h4>Pipes</h4>
+    <p>A pipe is used to transform data in the template (HTML) without changing the original value.</p>
+    <ol>
+        <li>Built-in Pipes: Angular provides many ready-to-use pipes. <br> Examples: date, uppercase, lowercase, currency, percent, decimal, slice, json, async etc...</li>
+        <li>Custom Pipes: When built-in pipes are not enough, we create custom pipes. <br> Examples: Reverse a string, Mask phone numbers, Convert status codes to text, Custom filtering or formatting</li>
+        <li>Pure vs Impure Pipes : </li>
+    </ol>
+
+
+
 <button (click)="onGoBackClick()">Go Back</button>

@@ -23,4 +23,16 @@ onAngularClick() {
   window.location.href = '/angular';
 }
 
+onBootstrapClick() {
+  window.location.href = '/bootstrap';
+}
+
+onRxjsClick() {
+  window.location.href = '/rxjs';
+}
+
+onNgrxClick() {
+  window.location.href = '/ngrx';
+}
+
 }
