@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -6,33 +8,37 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
+
 export class HomeComponent {
-onHTMLClick() {
-  window.location.href = '/html';
+
+  constructor(private router: Router) {}
+
+onHtmlClick() {
+  this.router.navigate(['/html']);
 }
 
-onCSSClick() {
-  window.location.href = '/css';
+onCssClick() {
+  this.router.navigate(['/css']);
 }
 
 onJavascriptClick() {
-  window.location.href = '/javascript';
+  this.router.navigate(['/javascript']);
 }
 
 onAngularClick() {
-  window.location.href = '/angular';
+  this.router.navigate(['/angular']);
 }
 
 onBootstrapClick() {
-  window.location.href = '/bootstrap';
+  this.router.navigate(['/bootstrap']);
 }
 
 onRxjsClick() {
-  window.location.href = '/rxjs';
+  this.router.navigate(['/rxjs']);
 }
 
 onNgrxClick() {
-  window.location.href = '/ngrx';
+  this.router.navigate(['/ngrx']);
 }
 
 }
