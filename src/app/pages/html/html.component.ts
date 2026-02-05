@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-html',
   imports: [CommonModule],
-  standalone: true,
   templateUrl: './html.component.html',
-  styleUrls: ['./html.component.css']
+  styleUrls: ['./html.component.css'],
 })
 export class HtmlComponent {
+  constructor(private router: Router) {}
 
-onGoBackClick() {
-  window.location.href = '/';
-}
-
+  onGoBackClick() {
+    this.router.navigate(['/']);
+  }
 }
