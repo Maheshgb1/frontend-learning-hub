@@ -19,7 +19,7 @@ header {
   background: #122646;
   padding: 16px;
   margin-bottom: 20px;
-    color: #fff;
+  color: #fff;
   text-align: center;
 }
 
@@ -54,7 +54,7 @@ section {
   padding: 16px;
   margin-bottom: 50px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 section h2 {
@@ -68,13 +68,17 @@ form {
   margin-bottom: 50px;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #cbd5e1;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border-color: #2563eb;
 }
@@ -84,7 +88,8 @@ table {
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   border: 1px solid #cbd5e1;
   text-align: left;
@@ -94,7 +99,8 @@ thead {
   background: #e2e8f0;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   display: block;
   margin: 10px 0;

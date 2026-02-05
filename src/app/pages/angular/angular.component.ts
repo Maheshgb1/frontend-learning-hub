@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 
 
@@ -11,13 +13,15 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './angular.component.css'
 })
 export class AngularComponent {
+  constructor(private router: Router) {}
+
   value = 'Hello Angular';
   imageUrl = 'E:\JOB Preparation\frontend-learning-hub\public\favicon.ico';
   name = '';
 
 
 onGoBackClick() {
-  window.location.href = '/';
+  this.router.navigate(['/']);
 }
 
 isButtonClicked() {

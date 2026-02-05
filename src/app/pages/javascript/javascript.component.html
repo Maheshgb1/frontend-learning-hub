@@ -1,4 +1,17 @@
+<header>
+  <h1>Welcome, Javascript Learning Page</h1>
+</header>
 <button (click)="onGoBackClick()">Go Back</button>
-<h3>Array</h3>
-<Button (click)="arrayInit()">Array Example</Button>
-<Button (click)="onMap()">Map</Button>
+<div class="js-container">
+  <section *ngFor="let topic of topics; let i = index" class="topic-card">
+    <h2>{{ topic.title }}</h2>
+
+    <textarea [(ngModel)]="topic.code" spellcheck="false"> </textarea>
+
+    <button (click)="runCode(topic.code, i)">▶ Run Code</button>
+
+    <pre class="output"
+      >{{ outputMap[i] }}
+    </pre>
+  </section>
+</div>
