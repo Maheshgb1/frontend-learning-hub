@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { OnlyNumbersDirective } from '../../directive-test.directive';
-import { HighlightDirective } from '../../highlight.directive';
+import { OnlyNumbersDirective } from '../../directives/directive-test.directive';
+import { HighlightDirective } from '../../directives/highlight.directive';
 
 
 
