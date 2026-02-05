@@ -1,3 +1,51 @@
+section {
+  background: #719df0;
+  padding: 16px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.btn {
+  top: 16px;
+  left: 16px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header {
+  background: #122646;
+  padding: 16px;
+  margin-bottom: 20px;
+    color: #fff;
+  text-align: center;
+}
+
+.main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
 /* ================= VARIABLES ================= */
 :root {
   --primary: #007bff;
@@ -147,8 +195,12 @@
 
 /* ================= ANIMATION ================= */
 @keyframes move {
-  from { transform: translateX(0); }
-  to { transform: translateX(100px); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
 }
 
 .animate-box {
@@ -158,4 +210,58 @@
 /* ================= VARIABLES ================= */
 .var-text {
   color: var(--primary);
+}
+
+/* ================= TYPOGRAPHY ================= */
+.typography-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+/* ================= OVERFLOW ================= */
+.overflow-box {
+  width: 200px;
+  height: 60px;
+  overflow: auto;
+  border: 1px solid #aaa;
+}
+
+/* ================= ADVANCED SELECTORS ================= */
+.advanced-list li:first-child {
+  color: green;
+}
+
+.advanced-list li:nth-child(2) {
+  font-weight: bold;
+}
+
+.advanced-list li:last-child {
+  color: red;
+}
+
+/* ================= UNITS ================= */
+.unit-box {
+  width: 50vw;
+  height: 4rem;
+  background: #ddd;
+}
+
+/* ================= FORM ================= */
+.input-box {
+  padding: 10px;
+  border: 2px solid #ccc;
+}
+
+.input-box:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* ================= SHADOW & BACKGROUND ================= */
+.shadow-box {
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

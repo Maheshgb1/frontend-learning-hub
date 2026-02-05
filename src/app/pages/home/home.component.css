@@ -28,6 +28,5 @@
 
 .btn:hover {
     background-color: rgb(223, 80, 80);
-    transform: translateY(-5px);
     cursor: pointer;
 }
