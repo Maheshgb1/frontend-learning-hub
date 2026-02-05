@@ -5,6 +5,7 @@
 <div class="js-container">
   <section *ngFor="let topic of topics; let i = index" class="topic-card">
     <h2>{{ topic.title }}</h2>
+    <p class="desc">{{ topic.description }}</p>
 
     <textarea [(ngModel)]="topic.code" spellcheck="false"> </textarea>
 
@@ -13,5 +14,29 @@
     <pre class="output"
       >{{ outputMap[i] }}
     </pre>
+
+<div *ngIf="topic.title === 'Browser & DOM'" class="dom-demo">
+
+  <div id="box" class="box">Original Box</div>
+
+  <div id="parent" class="parent">
+    Parent
+    <button id="child">Child</button>
+  </div>
+
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <a href="https://example.com" id="link">Click link</a>
+
+  <br /><br />
+  <button id="onceBtn">Click once</button>
+
+</div>
+
+
   </section>
 </div>
