@@ -1,0 +1,78 @@
+.js-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.topic-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  background: #b3e4b1;
+}
+
+textarea {
+  width: 97%;
+  min-height: 120px;
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 0;
+  resize: none;
+}
+
+button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #084298;
+}
+
+.output {
+  background: #111;
+  color: #0f0;
+  padding: 10px;
+  min-height: 40px;
+  margin-top: 10px;
+  white-space: pre-wrap;
+}
+
+header {
+  background: #122646;
+  padding: 16px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.desc {
+  white-space: pre-line;
+}
+
+.dom-demo {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px dashed #aaa;
+}
+
+.box {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.parent {
+  padding: 10px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.parent button {
+  margin-left: 10px;
+}
